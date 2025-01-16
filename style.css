@@ -44,14 +44,14 @@ nav li {
 }
 
 nav a {
-  color: #ffffff; /* White navigation link color */
+  color: #f50707; /* White navigation link color */
   text-decoration: none;
   padding: 10px 15px;
   transition: background-color 0.3s ease;
 }
 
 nav a:hover {
-  background-color: #030303;
+  background-color: #ffffff;
 }
 
 section {
