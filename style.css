@@ -1,13 +1,19 @@
 header {
-  background-image: url('./pictures/Header.jpg');
-  background-size: cover; /* Revert back to 'cover' */
+  background-image: linear-gradient(
+    to right,
+    black,
+    white
+  ); /* Black and white gradient */
   height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #000000;
-  background-position: center;
-  background-repeat: no-repeat;
+  text-align: center; /* Add this to center the text */
+}
+
+header h1 {
+  color: red; /* Red text color */
+  font-size: 10em; /* Example font size */
 }
 
 nav ul {
@@ -16,9 +22,7 @@ nav ul {
   padding: 0;
   background-color: #000000;
   text-align: center;
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  position: static; /* Changed to static */
   font-size: 1.5em; /* Double the font size */
   padding: 20px 15px; /* Double the padding */
 }
@@ -97,7 +101,7 @@ section {
   flex: 1; /* Allow the text to take up available space */
   padding-right: 0px; /* Remove right padding */
   padding-left: 20px; /* Add left padding */
-  /* text-align: left;  Remove this line to center the text to the left*/
+  /* text-align: left;  Remove this line to center the text to the left*/
 }
 
 .about-text h3 {
