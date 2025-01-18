@@ -14,8 +14,8 @@ body {
 }
 
 header {
-  background-image: url('Pictures/Header.jpg'); /* Corrected path */
-  background-size: cover;
+  background-image: url('./pictures/Header.jpg');
+  background-size: cover; /* Revert back to 'cover' */
   height: 300px;
   display: flex;
   justify-content: center;
