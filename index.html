@@ -3,11 +3,26 @@
   <head>
     <title>IDLERIDERS - Ride or DIY</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <header>
-      <h1>IDLERIDER</h1>
-    </header>
+    <section id="hero">
+      <img src="Pictures\Hero.jpg" alt="IDLERIDER Hero Image" />
+      <h2>IDLERIDER</h2>
+      <p>Ride or DIY</p>
+    </section>
 
     <nav>
       <ul>
@@ -21,10 +36,6 @@
 
     <section id="about">
       <div class="about-content">
-        <img
-          src="Pictures\About.JPG"
-          alt="A photo of IDLERIDERS members working together in the workspace"
-        />
         <div class="about-text">
           <h3>About IDLERIDER</h3>
           <p>
@@ -53,10 +64,6 @@
 
     <section id="services">
       <div class="services-content">
-        <img
-          src="Pictures\Our Services.jpg"
-          alt="Photo representing the services offered"
-        />
         <div class="services-text">
           <h3>Our Services</h3>
           <ul>
@@ -72,10 +79,7 @@
 
     <section id="membership">
       <div class="membership-content">
-        <img
-          src="Pictures\memberships.jpg"
-          alt="Photo representing the benefits of membership"
-        />
+        alt="Photo representing the benefits of membership" />
         <div class="membership-text">
           <h3>Membership</h3>
           <p>
@@ -88,7 +92,6 @@
             <li>And More!</li>
           </ul>
           <p>Day passes available for walk-ins.</p>
-
           <a href="membership-interest-form.html">
             <button>Join Now</button>
           </a>
@@ -98,10 +101,6 @@
 
     <section id="events">
       <div class="events-content">
-        <img
-          src="Pictures\Events.JPG"
-          alt="Photo of people enjoying an event"
-        />
         <div class="events-text">
           <h3>Events</h3>
           <p>Check out our upcoming events:</p>
@@ -116,13 +115,9 @@
 
     <section id="contact">
       <div class="contact-content">
-        <img
-          src="Pictures\contact us.JPG"
-          alt="Photo representing contacting IDLERIDER"
-        />
         <div class="contact-text">
           <h3>Contact Us</h3>
-          <p>Email:idleridershop@gmail.com</p>
+          <p>Email: idleridershop@gmail.com</p>
           <p>Phone: COMING SOON</p>
           <p>Location: COMING SOON</p>
         </div>
@@ -132,38 +127,5 @@
     <footer>
       <p>&copy; 2023 IDLERIDERS</p>
     </footer>
-
-    <div id="overlay">
-      <div id="overlay-content">
-        <h2>IDLERIDERS - Coming Soon!</h2>
-        <p>
-          Join our community of motorcycle enthusiasts. We're building a space
-          for you to learn, repair, and connect.
-        </p>
-        <p>Become one of our first 25 members and unlock exclusive benefits!</p>
-        <p>
-          Click outside this box to view the website or click below to join!
-        </p>
-        <button
-          id="join-button"
-          onclick="window.location.href='membership-interest-form.html'"
-        >
-          Join Now
-        </button>
-      </div>
-    </div>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const overlay = document.getElementById('overlay')
-        const overlayContent = document.getElementById('overlay-content')
-
-        overlay.addEventListener('click', function (event) {
-          if (event.target === overlay) {
-            overlay.style.display = 'none'
-          }
-        })
-      })
-    </script>
   </body>
 </html>

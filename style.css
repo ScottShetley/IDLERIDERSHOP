@@ -1,19 +1,50 @@
-header {
-  background-image: linear-gradient(
-    to right,
-    black,
-    white
-  ); /* Black and white gradient */
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center; /* Add this to center the text */
+#hero img {
+  max-width: 100%;
+  height: 600px;
+  object-fit: cover;
+  width: 100% !important;
+  height: 100% !important;
 }
 
-header h1 {
-  color: red; /* Red text color */
-  font-size: 10em; /* Example font size */
+#hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#hero h2 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+  color: white;
+  font-family: 'Anton', sans-serif;
+  font-size: 11em;
+  text-shadow: -3px -3px 0 #000, 2.5px 2.5px 0 #666;
+}
+
+#hero p {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3em;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 nav ul {
@@ -22,9 +53,9 @@ nav ul {
   padding: 0;
   background-color: #000000;
   text-align: center;
-  position: static; /* Changed to static */
-  font-size: 1.5em; /* Double the font size */
-  padding: 20px 15px; /* Double the padding */
+  position: static;
+  font-size: 1.5em;
+  padding: 20px 15px;
 }
 
 nav li {
@@ -33,7 +64,7 @@ nav li {
 }
 
 nav a {
-  color: #f50707; /* White navigation link color */
+  color: #f50707;
   text-decoration: none;
   padding: 10px 15px;
   transition: background-color 0.3s ease;
@@ -49,18 +80,15 @@ section {
 
 #overlay {
   position: fixed;
-  /* Stay in place */
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
-  /* Semi-transparent black */
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1000;
-  /* Ensure it's on top */
 }
 
 #overlay-content {
@@ -72,87 +100,76 @@ section {
 
 #join-button {
   background-color: #e74c3c;
-  /* Example color */
   color: white;
   padding: 12px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
-
 .about-content {
   display: flex;
-  align-items: center; /* Vertically center the content */
-  flex-direction: row-reverse; /* Reverse the order of items */
+  flex-direction: column;
+  justify-content: center;
 }
 
-.about-content img {
-  max-width: 30%;
-  height: auto;
-  display: block;
-  margin: 20px auto;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  margin-left: 40px; /* Increased margin */
-  margin-right: 0; /* Remove right margin */
+#about {
+  background-image: url('Pictures/About.JPG');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 30% 59%;
 }
-
 .about-text {
-  flex: 1; /* Allow the text to take up available space */
-  padding-right: 0px; /* Remove right padding */
-  padding-left: 20px; /* Add left padding */
-  /* text-align: left;  Remove this line to center the text to the left*/
+  flex: 1;
+  padding-right: 0px;
+  padding-left: 20px;
 }
-
 .about-text h3 {
-  margin-top: 0; /* Remove default h3 margin */
+  margin-top: 0;
 }
 .services-content {
   display: flex;
-  align-items: center;
-  flex-direction: row-reverse; /* Image on the right */
+  flex-direction: column;
+  justify-content: center;
 }
 
-.services-content img {
-  max-width: 30%;
-  height: auto;
-  display: block;
-  margin: 20px auto;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  margin-left: 40px;
-  margin-right: 0;
+#services {
+  background-image: url('Pictures/Our Services.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 30% 40%;
 }
-
 .services-text {
   flex: 1;
   padding-right: 0px;
   padding-left: 20px;
 }
+.services-text ul {
+  text-align: center;
+  padding-inline-start: 0;
+}
+.services-text li {
+  text-align: center;
+}
 .membership-content {
   display: flex;
-  align-items: center;
-  flex-direction: row-reverse; /* Image on the right */
+  flex-direction: column;
+  justify-content: center;
 }
 
-.membership-content img {
-  max-width: 30%;
-  height: auto;
-  display: block;
-  margin: 20px auto;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  margin-left: 40px;
-  margin-right: 0;
+#membership {
+  background-image: url('Pictures/memberships.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 80% 73%;
 }
-
 .membership-text {
   flex: 1;
   padding-right: 0px;
   padding-left: 20px;
 }
+
 #membership button {
-  background-color: #e74c3c; /* Example color */
+  background-color: #e74c3c;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -161,21 +178,16 @@ section {
 }
 .events-content {
   display: flex;
-  align-items: center;
-  flex-direction: row-reverse; /* Image on the right */
+  flex-direction: column;
+  justify-content: center;
 }
 
-.events-content img {
-  max-width: 30%;
-  height: auto;
-  display: block;
-  margin: 20px auto;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  margin-left: 40px;
-  margin-right: 0;
+#events {
+  background-image: url('Pictures/Events.JPG');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 45% 55%;
 }
-
 .events-text {
   flex: 1;
   padding-right: 0px;
@@ -183,23 +195,50 @@ section {
 }
 .contact-content {
   display: flex;
-  align-items: center;
-  flex-direction: row-reverse; /* Image on the right */
+  flex-direction: column;
+  justify-content: center;
 }
 
-.contact-content img {
-  max-width: 30%;
-  height: auto;
-  display: block;
-  margin: 20px auto;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  margin-left: 40px;
-  margin-right: 0;
+#contact {
+  background-image: url('Pictures/contact us.JPG');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 60% 40%;
 }
-
 .contact-text {
   flex: 1;
   padding-right: 0px;
   padding-left: 20px;
+}
+
+/*... other styles... */
+
+@media (max-width: 768px) {
+  #hero h2 {
+    font-size: 8em;
+    margin-bottom: 5px;
+  }
+
+  #hero p {
+    font-size: 4em;
+  }
+}
+
+@media (max-width: 480px) {
+  #hero h2 {
+    font-size: 4em;
+    margin-bottom: 5px;
+  }
+
+  #hero p {
+    font-size: 1.5em;
+  }
+}
+
+#about,
+#services,
+#membership,
+#events,
+#contact {
+  height: 100vh;
 }
