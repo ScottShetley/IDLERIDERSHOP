@@ -19,7 +19,8 @@ body {
   height: 100vh;
 }
 
-#hero h2 {
+#hero h1 {
+  /* Changed from h2 to h1 */
   position: absolute;
   top: 30%;
   left: 50%;
@@ -179,7 +180,29 @@ section {
   padding-right: 0px;
   padding-left: 20px;
 }
+/* Target the entire section */
+#about {
+  background-color: #f0f0f0; /* Set a light gray background color */
+  padding: 20px; /* Add some padding around the content */
+  color: white; /* Set the color of all text within the #about section to white */
+  font-family: 'Anton', sans-serif; /* Use the Anton font for all text within the #about section */
+  text-align: center; /* Center all content within the #about section */
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000; /* Add black outline */
+}
 
+#about h2 {
+  font-size: 6em; /* Increased font size to 3em */
+}
+
+#about.about-text {  
+  color: white; 
+  font-family: 'Anton', sans-serif; 
+  text-align: center; 
+  width: 80%;    /* Set the width of the div to 80% */
+  margin: 0 auto; /* Center the div horizontally */
+  display: block;  /* Make the div a block-level element */
+}
 .membership-content {
   display: flex;
   flex-direction: column;
