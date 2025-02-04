@@ -91,59 +91,6 @@ section {
   padding: 20px;
 }
 
-#overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
-
-#overlay-content {
-  background-color: white;
-  padding: 30px;
-  border-radius: 5px;
-  /* text-align: center;  Remove this line */
-}
-
-#overlay-content a {
-  border: none;
-  /* Remove any border */
-  outline: none;
-  /* Remove any outline */
-}
-
-#join-button {
-  background-color: #e74c3c;
-  /* Example: Red color */
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-right: 10px;
-  /* Add spacing to the right */
-}
-
-#overlay-content button {
-  background-color: #e74c3c;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  box-shadow: none;
-  display: block;
-  /* Add this line */
-  margin: 0 auto;
-  /* Add this line */
-  margin-bottom: 10px;
-}
 .about-content {
   display: flex;
   flex-direction: column;
@@ -218,14 +165,11 @@ section {
   padding-right: 0px;
 }
 
-/* padding-left: 20px;  Remove this line to remove left padding */
-
 #services ul {
-  /* Target the <ul> element within #services */
-  padding-left: 0;
-  /* Remove any default left padding */
-  text-align: center;
-  /* Center the list items and their markers */
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  padding-left: 0; /* Remove any default left padding */
+  text-align: center; /* Center the list items and their markers */
 }
 
 /* Target the entire section */
@@ -261,7 +205,7 @@ section {
   display: block;
   /* Make the div a block-level element */
 }
-.membership-content {
+membership-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -284,14 +228,34 @@ section {
   box-sizing: border-box;
 }
 
-#membership button {
-  background-color: #e74c3c;
+#membership h2 {
+  font-family: 'Anton', sans-serif;
+  font-size: 3em;
   color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  /* Add this to make the h2 white */
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  text-align: center;
 }
+
+#membership p,
+/* Add this to target the <p> elements */
+#membership ul {
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  text-align: center;
+  list-style-type: none;
+}
+
+#membership.center-button {
+  text-align: center;
+}
+
+#membership ul {
+  list-style-type: none;
+}
+
 .events-content {
   display: flex;
   flex-direction: column;
