@@ -18,6 +18,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
+    <div id="overlay">
+      <div id="overlay-content">
+        <h2>Become one of the first 25 members!</h2>
+        <p>Join the waitlist now and unlock exclusive benefits.</p>
+        <a href="membership-interest-form.html">
+          <button id="join-button">Join Now</button>
+        </a>
+        <button onclick="closeOverlay()">Close</button>
+      </div>
+    </div>
     <section id="hero">
       <img src="Pictures\Hero.jpg" alt="IDLERIDER Hero Image" />
       <h2>IDLERIDER</h2>
@@ -127,5 +137,11 @@
     <footer>
       <p>&copy; 2023 IDLERIDERS</p>
     </footer>
+
+    <script>
+      function closeOverlay() {
+        document.getElementById('overlay').style.display = 'none'
+      }
+    </script>
   </body>
 </html>
