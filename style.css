@@ -58,11 +58,15 @@ nav ul {
   padding: 0;
   background-color: #000000;
   text-align: center;
-  position: fixed; /* Changed to fixed position */
-  bottom: 0; /* Stick to the bottom of the viewport */
-  left: 0; /* Span the full width */
+  position: fixed;
+  /* Changed to fixed position */
+  bottom: 0;
+  /* Stick to the bottom of the viewport */
+  left: 0;
+  /* Span the full width */
   width: 100%;
-  z-index: 100; /* Ensure it stays on top of other elements */
+  z-index: 100;
+  /* Ensure it stays on top of other elements */
   font-size: 1.5em;
   padding: 20px 15px;
 }
@@ -106,20 +110,26 @@ section {
   border-radius: 5px;
   /* text-align: center;  Remove this line */
 }
+
 #overlay-content a {
-  border: none; /* Remove any border */
-  outline: none; /* Remove any outline */
+  border: none;
+  /* Remove any border */
+  outline: none;
+  /* Remove any outline */
 }
 
 #join-button {
-  background-color: #e74c3c; /* Example: Red color */
+  background-color: #e74c3c;
+  /* Example: Red color */
   color: white;
   padding: 12px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin-right: 10px; /* Add spacing to the right */
+  margin-right: 10px;
+  /* Add spacing to the right */
 }
+
 #overlay-content button {
   background-color: #e74c3c;
   color: white;
@@ -128,11 +138,12 @@ section {
   border-radius: 5px;
   cursor: pointer;
   box-shadow: none;
-  display: block; /* Add this line */
-  margin: 0 auto; /* Add this line */
+  display: block;
+  /* Add this line */
+  margin: 0 auto;
+  /* Add this line */
   margin-bottom: 10px;
 }
-
 .about-content {
   display: flex;
   flex-direction: column;
@@ -144,19 +155,24 @@ section {
   background-size: cover;
   background-attachment: fixed;
   background-position: 30% 59%;
-  border-top: 18px solid black; /* Usual thickness for top border */
-  border-left: 8px solid black; /* Usual thickness for left border */
-  border-right: 8px solid black; /* Usual thickness for right border */
-  border-bottom: 8px solid black; /* Thicker bottom border */
-  padding: 20px; /* Added padding to maintain spacing */
-  box-sizing: border-box; /* Ensures padding is included in element's total width and height */
+  border-top: 18px solid black;
+  /* Usual thickness for top border */
+  border-left: 8px solid black;
+  /* Usual thickness for left border */
+  border-right: 8px solid black;
+  /* Usual thickness for right border */
+  border-bottom: 8px solid black;
+  /* Thicker bottom border */
+  padding: 20px;
+  /* Added padding to maintain spacing */
+  box-sizing: border-box;
+  /* Ensures padding is included in element's total width and height */
 }
 .about-text {
   flex: 1;
   padding-right: 0px;
   padding-left: 20px;
 }
-
 .services-content {
   display: flex;
   flex-direction: column;
@@ -168,40 +184,82 @@ section {
   background-size: cover;
   background-attachment: fixed;
   background-position: 30% 40%;
-  border-top: 8px solid black; /* Usual thickness for top border */
-  border-left: 8px solid black; /* Usual thickness for left border */
-  border-right: 8px solid black; /* Usual thickness for right border */
-  border-bottom: 12px solid black; /* Thicker bottom border */
+  border-top: 8px solid black;
+  /* Usual thickness for top border */
+  border-left: 8px solid black;
+  /* Usual thickness for left border */
+  border-right: 8px solid black;
+  /* Usual thickness for right border */
+  border-bottom: 12px solid black;
+  /* Thicker bottom border */
   padding: 20px;
   box-sizing: border-box;
+}
+
+#services h2 {
+  font-size: 6em;
+  /* Increased font size to 3em */
+  font-family: 'Anton', sans-serif;
+}
+
+#services h2,
+#services p,
+#services li {
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  text-align: center;
+  list-style-type: none;
+  /* Add this line to remove the dots */
+  font-family: 'Anton', sans-serif;
 }
 .services-text {
   flex: 1;
   padding-right: 0px;
-  padding-left: 20px;
 }
+
+/* padding-left: 20px;  Remove this line to remove left padding */
+
+#services ul {
+  /* Target the <ul> element within #services */
+  padding-left: 0;
+  /* Remove any default left padding */
+  text-align: center;
+  /* Center the list items and their markers */
+}
+
 /* Target the entire section */
 #about {
-  background-color: #f0f0f0; /* Set a light gray background color */
-  padding: 20px; /* Add some padding around the content */
-  color: white; /* Set the color of all text within the #about section to white */
-  font-family: 'Anton', sans-serif; /* Use the Anton font for all text within the #about section */
-  text-align: center; /* Center all content within the #about section */
+  background-color: #f0f0f0;
+  /* Set a light gray background color */
+  padding: 20px;
+  /* Add some padding around the content */
+  color: white;
+  /* Set the color of all text within the #about section to white */
+  font-family: 'Anton', sans-serif;
+  /* Use the Anton font for all text within the #about section */
+  text-align: center;
+  /* Center all content within the #about section */
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000; /* Add black outline */
+    1px 1px 0 #000;
+  /* Add black outline */
 }
 
 #about h2 {
-  font-size: 6em; /* Increased font size to 3em */
+  font-size: 6em;
+  /* Increased font size to 3em */
 }
 
-#about.about-text {  
-  color: white; 
-  font-family: 'Anton', sans-serif; 
-  text-align: center; 
-  width: 80%;    /* Set the width of the div to 80% */
-  margin: 0 auto; /* Center the div horizontally */
-  display: block;  /* Make the div a block-level element */
+#about.about-text {
+  color: white;
+  font-family: 'Anton', sans-serif;
+  text-align: center;
+  width: 80%;
+  /* Set the width of the div to 80% */
+  margin: 0 auto;
+  /* Center the div horizontally */
+  display: block;
+  /* Make the div a block-level element */
 }
 .membership-content {
   display: flex;
@@ -214,10 +272,14 @@ section {
   background-size: cover;
   background-attachment: fixed;
   background-position: 80% 73%;
-  border-top: 8px solid black; /* Usual thickness for top border */
-  border-left: 8px solid black; /* Usual thickness for left border */
-  border-right: 8px solid black; /* Usual thickness for right border */
-  border-bottom: 12px solid black; /* Thicker bottom border */
+  border-top: 8px solid black;
+  /* Usual thickness for top border */
+  border-left: 8px solid black;
+  /* Usual thickness for left border */
+  border-right: 8px solid black;
+  /* Usual thickness for right border */
+  border-bottom: 12px solid black;
+  /* Thicker bottom border */
   padding: 20px;
   box-sizing: border-box;
 }
@@ -241,14 +303,17 @@ section {
   background-size: cover;
   background-attachment: fixed;
   background-position: 45% 55%;
-  border-top: 8px solid black; /* Usual thickness for top border */
-  border-left: 8px solid black; /* Usual thickness for left border */
-  border-right: 8px solid black; /* Usual thickness for right border */
-  border-bottom: 12px solid black; /* Thicker bottom border */
+  border-top: 8px solid black;
+  /* Usual thickness for top border */
+  border-left: 8px solid black;
+  /* Usual thickness for left border */
+  border-right: 8px solid black;
+  /* Usual thickness for right border */
+  border-bottom: 12px solid black;
+  /* Thicker bottom border */
   padding: 20px;
   box-sizing: border-box;
 }
-
 .contact-content {
   display: flex;
   flex-direction: column;
@@ -260,16 +325,19 @@ section {
   background-size: cover;
   background-attachment: fixed;
   background-position: 60% 40%;
-  border-top: 8px solid black; /* Usual thickness for top border */
-  border-left: 8px solid black; /* Usual thickness for left border */
-  border-right: 8px solid black; /* Usual thickness for right border */
-  border-bottom: 12px solid black; /* Thicker bottom border */
+  border-top: 8px solid black;
+  /* Usual thickness for top border */
+  border-left: 8px solid black;
+  /* Usual thickness for left border */
+  border-right: 8px solid black;
+  /* Usual thickness for right border */
+  border-bottom: 12px solid black;
+  /* Thicker bottom border */
   padding: 20px;
   box-sizing: border-box;
 }
 
 /*... other styles... */
-
 @media (max-width: 768px) {
   #hero h2 {
     font-size: 8em;
