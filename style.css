@@ -117,6 +117,12 @@ section {
   background-size: cover;
   background-attachment: fixed;
   background-position: 30% 59%;
+  border-top: 2px solid black; /* Usual thickness for top border */
+  border-left: 8px solid black; /* Usual thickness for left border */
+  border-right: 8px solid black; /* Usual thickness for right border */
+  border-bottom: 8px solid black; /* Thicker bottom border */
+  padding: 20px; /* Added padding to maintain spacing */
+  box-sizing: border-box; /* Ensures padding is included in element's total width and height */
 }
 .about-text {
   flex: 1;
@@ -135,6 +141,12 @@ section {
   background-size: cover;
   background-attachment: fixed;
   background-position: 30% 40%;
+  border-top: 8px solid black; /* Usual thickness for top border */
+  border-left: 8px solid black; /* Usual thickness for left border */
+  border-right: 8px solid black; /* Usual thickness for right border */
+  border-bottom: 12px solid black; /* Thicker bottom border */
+  padding: 20px;
+  box-sizing: border-box;
 }
 .services-text {
   flex: 1;
@@ -153,6 +165,12 @@ section {
   background-size: cover;
   background-attachment: fixed;
   background-position: 80% 73%;
+  border-top: 8px solid black; /* Usual thickness for top border */
+  border-left: 8px solid black; /* Usual thickness for left border */
+  border-right: 8px solid black; /* Usual thickness for right border */
+  border-bottom: 12px solid black; /* Thicker bottom border */
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 #membership button {
@@ -174,6 +192,12 @@ section {
   background-size: cover;
   background-attachment: fixed;
   background-position: 45% 55%;
+  border-top: 8px solid black;    /* Usual thickness for top border */
+  border-left: 8px solid black;   /* Usual thickness for left border */
+  border-right: 8px solid black;  /* Usual thickness for right border */
+  border-bottom: 12px solid black; /* Thicker bottom border */
+  padding: 20px; 
+  box-sizing: border-box; 
 }
 
 .contact-content {
@@ -187,8 +211,13 @@ section {
   background-size: cover;
   background-attachment: fixed;
   background-position: 60% 40%;
+  border-top: 8px solid black;    /* Usual thickness for top border */
+  border-left: 8px solid black;   /* Usual thickness for left border */
+  border-right: 8px solid black;  /* Usual thickness for right border */
+  border-bottom: 12px solid black; /* Thicker bottom border */
+  padding: 20px; 
+  box-sizing: border-box; 
 }
-
 
 /*... other styles... */
 
